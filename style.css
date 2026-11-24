@@ -16,17 +16,39 @@ body{
     to{background-position:right;}
 }
 
+@keyframes titleColor{
+    from{background-position:left;}
+    to{background-position:right;}
+}
+
 header{
     text-align:center;
     padding:50px 20px;
     color:white;
-    background:rgba(0,0,0,.25);
+    background:rgba(255,105,180,.45);
     backdrop-filter:blur(12px);
 }
 
 header h1{
     font-size:48px;
+    background:linear-gradient(90deg,#ffdd00,#ff6b6b,#00e5ff);
+    background-size:200% auto;
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    animation:titleColor 6s ease-in-out infinite alternate;
     text-shadow:3px 3px 8px black;
+}
+
+header h4{
+    margin-top:10px;
+    background:linear-gradient(90deg,#00e5ff,#ffffff,#ffdd00);
+    background-size:200% auto;
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    text-shadow:2px 2px 6px rgba(0,0,0,.7);
+    animation:titleColor 6s ease-in-out infinite alternate-reverse;
 }
 
 header p{
