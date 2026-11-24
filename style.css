@@ -6,7 +6,7 @@
 
 body{
     font-family:'Segoe UI',sans-serif;
-    background:linear-gradient(135deg,#4facfe,#00f2fe,#43e97b);
+    background:linear-gradient(135deg,#4797e5,#00d9e5,#3ccf6e);
     background-size:400% 400%;
     animation:bgMove 10s infinite alternate;
 }
@@ -71,6 +71,11 @@ h2{
 
 .info-details{
     flex:1;
+}
+
+.info-details strong{
+    color:#0066cc;
+    font-weight:bold;
 }
 
 .info-layout img{
